@@ -1,0 +1,26 @@
+﻿<Window x:Class="CreateDeckListJSONGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreateDeckListJSONGUI"
+        mc:Ignorable="d"
+        Title="Create Decklists" Height="200" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="FilePath" Margin="10" MinWidth="200" TextTrimming="CharacterEllipsis" Background="LightGray" Grid.Column="0" Grid.Row="0">
+			file path to save decks
+        </TextBlock>
+        <Button x:Name="changePathButton" Content="Change Path"  Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Grid.Column="1" Grid.Row="0" Click="ChangePathButton_Click"/>
+        <Button x:Name="newDeckButton" Content="New Deck"  Margin="10" VerticalAlignment="Top" Width="92" Grid.Column="0" Grid.Row="1" Click="NewDeckButton_Click"/>
+        <Button x:Name="loadDeckButton" Content="Load Deck"  Margin="10" VerticalAlignment="Top" Width="92" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Click="LoadDeckButton_Click"/>
+
+    </Grid>
+</Window>
